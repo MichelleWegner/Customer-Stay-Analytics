@@ -1,27 +1,12 @@
-# visualization.py
-
 import seaborn as sns
 import matplotlib.pyplot as plt
+from sklearn.metrics import confusion_matrix
 
-def plot_data(data):
-    plt.figure(figsize=(10, 6))
-    sns.boxplot(x='Churn Label', y='Monthly Charges', data=data)
-    plt.title('Monthly Charges Distribution for Churn and Non-Churn Customers')
-    plt.xlabel('Churn Label')
-    plt.ylabel('Monthly Charges')
-    plt.show()
-
-    plt.figure(figsize=(10, 6))
-    sns.boxplot(x='Churn Label', y='Total Charges', data=data)
-    plt.title('Total Charges Distribution for Churn and Non-Churn Customers')
-    plt.xlabel('Churn Label')
-    plt.ylabel('Total Charges')
-    plt.show()
-
-    plt.figure(figsize=(10, 6))
-    sns.boxplot(x='Churn Label', y='Tenure Months', data=data)
-    plt.title('Tenure Distribution for Churn and Non-Churn Customers')
-    plt.xlabel('Churn Label')
-    plt.ylabel('Tenure Months')
+def plot_confusion_matrix(y_test, y_pred, title):
+    cm = confusion_matrix(y_test, y_pred)
+    sns.heatmap(cm, annot=True, fmt='d', cmap='Blues')
+    plt.title(title)
+    plt.xlabel('Predicted')
+    plt.ylabel('Actual')
     plt.show()
 
