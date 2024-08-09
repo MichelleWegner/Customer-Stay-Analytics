@@ -41,10 +41,14 @@ Initial evaluations were performed using confusion matrices and classification r
 
 5. Hyperparameter Tuning and Model Optimization
 Applied Grid Search and Cross-Validation to fine-tune model parameters for optimal performance.
+
 Identified Gradient Boosting as the best-performing model with the following parameters:
-learning_rate: 0.1
-max_depth: 3
-n_estimators: 100
+
+***learning_rate: 0.1***
+***max_depth: 3***
+***n_estimators: 100***
+
+
 6. Model Evaluation
 
 ***The optimized Gradient Boosting model achieved an impressive accuracy of 92.83%.***
