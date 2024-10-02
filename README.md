@@ -67,3 +67,4 @@ The project successfully developed a robust model that not only delivers high ac
 # Authors
 This project was developed by Michelle & Sulaiman.
 
+## Presentation : https://www.canva.com/design/DAGNTrspvuo/3kHkK7KRpTn9VsGQhSMSHA/edit?utm_content=DAGNTrspvuo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
