@@ -1,4 +1,4 @@
-Customer Stay Analytics
+# Customer Stay Analytics
 
 
 This project focuses on predicting customer churn within a telecommunications company.
